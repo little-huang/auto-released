@@ -1,0 +1,42 @@
+
+const GIT_STATUS_NOT_CLEAN_MESSAGE = 'The current workspace is not clean, please submit or save first... ❌'
+
+const MANUALLY_CANCEL_RELEASE_VERSION_ERROR_MESSAGE = 'Manually cancel publishing... ❌'
+
+const BUILDING_MESSAGE = 'Building... 🚧  Please sit down and relax...'
+
+const BUILD_SUCCESS_MESSAGE = 'Build success ✅'
+
+const BUILD_ERROR_MESSAGE = 'Build error ❌'
+
+const REQUIRED_LOGIN_NPM_MESSAGE = 'Please login to npm first... ❌'
+
+const NPM_PUBLISH_SUCCESS_MESSAGE = 'Publish success ✅'
+
+const MODIFY_VERSION_MESSAGE = 'modify version success ✅...'
+
+const AUTO_RELEASE_MESSAGE = 'Auto release done ✅'
+
+export {
+  BUILDING_MESSAGE,
+  BUILD_SUCCESS_MESSAGE,
+  BUILD_ERROR_MESSAGE,
+  GIT_STATUS_NOT_CLEAN_MESSAGE,
+  MANUALLY_CANCEL_RELEASE_VERSION_ERROR_MESSAGE,
+  MODIFY_VERSION_MESSAGE,
+  NPM_PUBLISH_SUCCESS_MESSAGE,
+  REQUIRED_LOGIN_NPM_MESSAGE,
+  AUTO_RELEASE_MESSAGE
+}
+
+export default {
+  BUILDING_MESSAGE,
+  BUILD_SUCCESS_MESSAGE,
+  BUILD_ERROR_MESSAGE,
+  GIT_STATUS_NOT_CLEAN_MESSAGE,
+  MANUALLY_CANCEL_RELEASE_VERSION_ERROR_MESSAGE,
+  MODIFY_VERSION_MESSAGE,
+  NPM_PUBLISH_SUCCESS_MESSAGE,
+  REQUIRED_LOGIN_NPM_MESSAGE,
+  AUTO_RELEASE_MESSAGE
+}

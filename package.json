@@ -1,0 +1,61 @@
+{
+  "name": "auto-released",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "author": "huangbc",
+  "description": "Automatic release and git-related operations and webhook",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/little-huang/auto-released"
+  },
+  "homepage": "https://github.com/little-huang/auto-released/blob/master/README.md",
+  "keywords": [
+    "auto-release",
+    "auto-released",
+    "release",
+    "released",
+    "git",
+    "tag",
+    "git tag",
+    "git push",
+    "push",
+    "webhook",
+    "publish",
+    "npm publish"
+  ],
+  "bin": {
+    "auto-released": "bin/auto-release.js",
+    "auto-release": "bin/auto-release.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf coverage",
+    "lint": "yarn prettier && yarn eslint",
+    "lint:fix": "yarn prettier:fix && yarn eslint:fix",
+    "eslint": "eslint '{src,test}/**/*.ts'",
+    "eslint:fix": "yarn eslint --fix",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.26",
+    "tsup": "^5.12.6"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-core": "^4.2.4",
+    "inquirer": "^8.2.2",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5",
+    "module-alias": "^2.2.2",
+    "node-fetch": "^2.6.7",
+    "semver": "^7.3.7"
+  },
+  "_moduleAliases": {
+    "@src": "dist"
+  }
+}

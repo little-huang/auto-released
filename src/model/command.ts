@@ -1,0 +1,70 @@
+
+const GIT_STATUS_PORCELAIN_COMMAND = 'git status --porcelain'
+
+const GIT_ADD_COMMAND = 'git add .'
+
+const GIT_CURRENT_BRANCH_COMMAND = 'git name-rev --name-only HEAD'
+
+const GIT_CHECKOUT_COMMAND = 'git checkout'
+
+const GIT_PUSH_COMMAND = 'git push'
+
+const GIT_ADD_DOT_COMMAND = 'git add .'
+
+const GIT_ADD_ALL_COMMAND = 'git add --all'
+
+const GIT_COMMIT_COMMAND = 'git commit -am'
+
+const GIT_TAG = 'git tag'
+
+const GIT_TAG_DELETE = 'git tag -d'
+
+const GIT_TAG_DELETE_ORIGIN = 'git push origin :refs/tags/'
+
+const GIT_TAG_ORIGIN = 'git push origin'
+
+const GIT_RESTORE_DOT_COMMAND = 'git restore .'
+
+const GIT_CHECKOUT_DOT_COMMAND = 'git checkout .'
+
+const NPM_PUBLISH_COMMAND = 'npm publish'
+
+const NPM_WHO_AM_I = 'npm who am i'
+
+export {
+  GIT_STATUS_PORCELAIN_COMMAND,
+  GIT_ADD_COMMAND,
+  GIT_CURRENT_BRANCH_COMMAND,
+  GIT_CHECKOUT_COMMAND,
+  GIT_PUSH_COMMAND,
+  GIT_ADD_DOT_COMMAND,
+  GIT_ADD_ALL_COMMAND,
+  GIT_TAG,
+  GIT_TAG_ORIGIN,
+  GIT_TAG_DELETE,
+  GIT_TAG_DELETE_ORIGIN,
+  GIT_RESTORE_DOT_COMMAND,
+  GIT_CHECKOUT_DOT_COMMAND,
+  GIT_COMMIT_COMMAND,
+  NPM_WHO_AM_I,
+  NPM_PUBLISH_COMMAND
+}
+
+export default {
+  GIT_STATUS_PORCELAIN_COMMAND,
+  GIT_ADD_COMMAND,
+  GIT_CURRENT_BRANCH_COMMAND,
+  GIT_CHECKOUT_COMMAND,
+  GIT_PUSH_COMMAND,
+  GIT_ADD_DOT_COMMAND,
+  GIT_ADD_ALL_COMMAND,
+  GIT_TAG,
+  GIT_TAG_ORIGIN,
+  GIT_TAG_DELETE,
+  GIT_TAG_DELETE_ORIGIN,
+  GIT_RESTORE_DOT_COMMAND,
+  GIT_CHECKOUT_DOT_COMMAND,
+  GIT_COMMIT_COMMAND,
+  NPM_WHO_AM_I,
+  NPM_PUBLISH_COMMAND
+}
