@@ -1,6 +1,6 @@
 {
   "name": "auto-released",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "author": "huangbc",
   "description": "Automatic release and git-related operations and webhook",

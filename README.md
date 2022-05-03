@@ -66,12 +66,7 @@ module.exports = {
   webhook: {
     enabled: false,
     url: '',
-    body: {
-      msgtype: 'text',
-      text: {
-        content: ''
-      }
-    }
+    body: {}
   },
 }
 ```
