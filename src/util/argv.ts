@@ -8,7 +8,7 @@ function argv(argv: string[]): PowerPartial<Options> {
   
   return {
     npm: {
-      versionType: args.npmVersionType,
+      versionType: args.npmVersionType || 'patch',
     }
   }
 }
