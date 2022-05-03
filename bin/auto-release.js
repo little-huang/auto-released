@@ -15,7 +15,7 @@ if (isNotUndefined(argv.init)) {
 }
 
 if (isNotUndefined(argv.version)) {
-  console.log('0.0.4')
+  console.log('0.0.5')
   return
 }
 else if(isNotUndefined(argv.ci) || isNotUndefined(argv.CI)) {
