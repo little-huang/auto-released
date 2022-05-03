@@ -25,10 +25,21 @@ function assignOptions(defaultOptions: Options, localFileOptions: Options, argvO
   return options
 }
 
+function setDefaultValue(options: Options): Options {
+  
+  if (isUndefined(options.npm.versionType)) {
+    options.npm.versionType = 'patch'
+  }
+  
+  return options
+}
+
 export {
-  assignOptions
+  assignOptions,
+  setDefaultValue
 }
 
 export default {
-  assignOptions
+  assignOptions,
+  setDefaultValue
 }

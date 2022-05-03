@@ -8,7 +8,6 @@ module.exports = {
     build: true,
     publish: true,
     buildCommand: 'npm run build',
-    versionType: 'patch'
   },
   webhook: {
     enabled: false,

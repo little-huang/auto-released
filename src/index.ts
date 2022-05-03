@@ -15,7 +15,7 @@ import Log from '@src/util/log'
 import { getCIReleaseVersionData, modifyVersion, releaseVersion } from '@src/util/version'
 import { getPackageJSONData } from '@src/util/packageJSON'
 import { getArgvData } from '@src/util/argv'
-import { assignOptions } from '@src/util/assign'
+import { assignOptions, setDefaultValue } from '@src/util/assign'
 import { getLocalFileOptions } from '@src/util/options'
 import { isTrue, isUndefined, isNotFalse } from '@src/util/type'
 /* build */
@@ -150,7 +150,9 @@ async function CIRun() {
     
     const localFileOptions = getLocalFileOptions(DefaultOptions, true)
     const argvOptions: PowerPartial<Options> = getArgvData()
-    const newOptions: Options = assignOptions(DefaultOptions, localFileOptions, argvOptions)
+    let newOptions: Options = assignOptions(DefaultOptions, localFileOptions, argvOptions)
+    
+    newOptions = setDefaultValue(newOptions)
     
     if (newOptions.git.checkClean) {
       await checkWorkSpaceClean()
